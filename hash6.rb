@@ -18,4 +18,7 @@ words =  ['demo', 'none', 'tied', 'evil', 'dome', 'mode', 'live','fowl', 'veil',
 
 result = words.group_by { |element| element.chars.sort }.values
 
-p result
+result.each do |val|
+	puts "------"
+	puts val
+end
